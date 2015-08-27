@@ -1,0 +1,14 @@
+body {
+  background-color: orange !important;
+  text-align: center !important; }
+
+.form-control {
+  width: 20% !important;
+  margin-left: 40% !important;
+  text-align: center !important;
+  position: relative !important; }
+
+.form-group {
+  position: relative !important; }
+
+/*# sourceMappingURL=main.css.map */
