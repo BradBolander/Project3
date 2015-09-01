@@ -108,3 +108,9 @@ $(document).ready(function() {
 
 
 });
+
+$.ajaxSetup({
+  beforeSend: function(xhr){
+    xhr.setRequestHeader('Authorization', 'Token token=' + global.apiKey)
+  }
+});

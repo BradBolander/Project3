@@ -1,5 +1,5 @@
-CREATE DATABASE instafake;
+CREATE DATABASE galaxies;
 
-\c instafake;
+\c galaxies;
 
-CREATE TABLE Instagram (id SERIAL PRIMARY KEY, username VARCHAR(255), post VARCHAR(255), description VARCHAR(255), hashtags VARCHAR(255));
+CREATE TABLE galaxy (id SERIAL PRIMARY KEY, name VARCHAR(255), radius VARCHAR(255), color VARCHAR(255), brightness VARCHAR(255), stars VARCHAR(255));
