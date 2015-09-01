@@ -1,6 +1,6 @@
 <script type="text/javascript">
   var global = global || {};
-  global.apiKey= '<%= @key %>';
+  window.globalkey = "<%= ENV['API_KEY'] %>";
 </script>
 
 <script type="text/template" id='table-row-template'>

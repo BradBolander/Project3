@@ -109,8 +109,13 @@ $(document).ready(function() {
 
 });
 
+// $.ajaxSetup({
+//   beforeSend: function(xhr){
+//     xhr.setRequestHeader('Authorization', 'Token token=' + global.apiKey)
+//   }
+// });
 $.ajaxSetup({
   beforeSend: function(xhr){
-    xhr.setRequestHeader('Authorization', 'Token token=' + global.apiKey)
+    xhr.setRequestHeader('X-API-KEY', globalkey)
   }
 });
