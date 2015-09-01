@@ -6,7 +6,6 @@ ActiveRecord::Base.establish_connection(
   :database => 'galaxies'
 )
 
-
 get '/galaxy' do
   erb :galaxy
 end
@@ -17,6 +16,7 @@ end
 
 ## get
 get '/api/galaxy' do
+
   GalaxyModel.all.to_json
 end
 

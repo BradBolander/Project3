@@ -29,7 +29,7 @@ galaxies.blueprints.collection = Backbone.Collection.extend({
 galaxies.create = function(name, radius, color, stars, brightness) {
 
   if (!name || !radius || !color || !stars || !brightness) {
-    console.log('you are missing a parameter! oopsie');
+    console.log('Wrong number of paramaters');
     return false;
   }
 
@@ -58,11 +58,14 @@ galaxies.blueprints.collectionView = Backbone.View.extend({
   },
   render: function() {
 
+    // Erases current contents in div
     this.$el.html('');
 
+    //Loop that puts data in the models
     var models = this.collection.models;
     for (var m in models) {
       var data = models[m];
+      console.log(data);
       new galaxies.blueprints.modelView({
           model: data
       });
@@ -70,6 +73,7 @@ galaxies.blueprints.collectionView = Backbone.View.extend({
   }
 });
 
+//
 galaxies.blueprints.modelView = Backbone.View.extend({
   initialize: function() {
     this.$el = $('.galaxies');
@@ -88,8 +92,8 @@ $(document).ready(function() {
     collection: galaxies.active.galaxyCollection
   });
 
+  //Assigns variables to the value of each div
   $('#add-galaxy').on('click', function(event) {
-
     event.preventDefault();
     var name = $('#name').val();
     var radius = $('#radius').val();

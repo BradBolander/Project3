@@ -5,8 +5,6 @@ body {
 
 
 .form-control {
-  width: 20% !important;
-  margin-left: 40%!important;
   text-align: center !important;
   position: relative !important;
 
@@ -15,12 +13,17 @@ body {
 .form-group {
   // margin-left: 35%!important;
   position: relative !important;
+
 }
-//
-// #name {
-//   width: 20%;
-//   text-align: center;
-// }
+
+#create-form {
+  width: 200px;
+  margin-left: 40%;
+  margin-top: 5%;
+  background-color: rgba(255, 202, 66, 0.74);
+}
+
+
 //
 // #radius {
 //   width: 20%;
