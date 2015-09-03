@@ -1,10 +1,18 @@
 body {
-  background-color: orange !important;
-  text-align: center !important; }
+  text-align: center !important;
+  position: relative !important;
+  color: white !important; }
+
+.table {
+  margin-top: 100px !important;
+  position: relative; }
 
 .form-control {
   text-align: center !important;
   position: relative !important; }
+
+header {
+  background-color: rgba(129, 171, 255, 0.79); }
 
 .form-group {
   position: relative !important; }
@@ -12,6 +20,14 @@ body {
 #create-form {
   width: 200px;
   margin-left: 40%;
-  margin-top: 5%; }
+  margin-top: 5%;
+  position: relative; }
+
+#galaxy {
+  background-color: #000;
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  z-index: -5; }
 
 /*# sourceMappingURL=main.css.map */
