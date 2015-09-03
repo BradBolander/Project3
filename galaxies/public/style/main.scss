@@ -8,7 +8,8 @@ body {
 .table {
   margin-top: 100px !important;
   position: relative;
-
+  background-color: rgba(20, 20, 20, 0.59);
+  border: 1px solid black;
 }
 
 .form-control {
@@ -18,8 +19,21 @@ body {
 }
 
 header {
-  background-color: rgba(129, 171, 255, 0.79);
+  background-color: rgba(20, 20, 20, 0.59);
+  position: fixed;
+  top: 0;
+  text-align: left;
+  width: 100%;
+  margin-top: -20px;
 }
+
+footer {
+  bottom: 0;
+  background-color: rgba(20, 20, 20, 0.59);
+  width: 100%;
+  position: fixed;
+}
+
 
 .form-group {
   // margin-left: 35%!important;

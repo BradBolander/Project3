@@ -13,8 +13,9 @@ get '/galaxy' do
   erb :galaxy
 end
 
-get '/' do
-  erb :index
+## New galaxy
+get '/create' do
+  erb :create
 end
 
 ## get
