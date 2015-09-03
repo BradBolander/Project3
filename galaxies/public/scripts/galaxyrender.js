@@ -5,7 +5,7 @@
 var scene = new THREE.Scene();
 // Create new Three perspective camera
 
-var camera = new THREE.PerspectiveCamera(120, window.innerWidth/window.innerHeight, 1, 50000);
+var camera = new THREE.PerspectiveCamera(140, window.innerWidth/window.innerHeight, 1, 50000);
 camera.position.x = 0;
 camera.position.z = 0;
 info = document.createElement( 'div' );
@@ -26,12 +26,12 @@ function newGalaxy() {
     // Creates new material AKA the squares/stars
     var material = new THREE.PointCloudMaterial({
       color: 0x001aa2,
-      size: .8,
+      size: 1,
       blending: THREE.AdditiveBlending,
       transparent: true,
       sizeAttenuation: true
     });
-                                              var max = 500;
+     var max = 500;
      var min = -500;
     //Loop that creates stars and detemines their positions
     for (var i = 0; i < starCount; i++) {
@@ -57,7 +57,7 @@ function newGalaxy() {
 
 // Create new instance of newGalaxy
 var newGalaxy = new newGalaxy();
-var galaxy = newGalaxy.create(5000, 50, 200000);
+var galaxy = newGalaxy.create(50, 50, 200000);
 
 // Add galaxy to scene
 scene.add(galaxy);
@@ -68,7 +68,7 @@ function update() {
   tickNum++;
 
   //Set camera Y coordinate
-  camera.position.y = 400;
+  camera.position.y = 200;
   //For a camera that rotates in and out
   /*camera.position.x = Math.cos(tickNum / 500) * 500;*/
   // Moving camera position
@@ -76,6 +76,7 @@ function update() {
   camera.position.x +=20 / tickNum;
 
   // Logic for defining where the camera points
+  // sin and cos functions allow camera to oscillate back and forth
   camera.lookAt({x:Math.sin(tickNum / 500) * 500, y: 10, z: Math.cos(tickNum / 500) * 500});
 
   //Constant rendering of the scene
