@@ -4,14 +4,18 @@ body {
   color: white !important; }
 
 .table {
-  margin-top: 100px !important;
+  margin-top: 48px;
   position: relative;
   background-color: rgba(20, 20, 20, 0.59);
   border: 1px solid black; }
 
 .form-control {
   text-align: center !important;
-  position: relative !important; }
+  position: relative !important;
+  width: 80% !important;
+  margin-left: 10%;
+  height: 20px !important;
+  border-radius: 0% !important; }
 
 header {
   background-color: rgba(20, 20, 20, 0.59);
@@ -27,6 +31,12 @@ footer {
   width: 100%;
   position: fixed; }
 
+#add-galaxy {
+  border-radius: 0%;
+  margin-bottom: 5px;
+  height: 30px;
+  padding-bottom: 10px; }
+
 .form-group {
   position: relative !important; }
 
@@ -34,7 +44,8 @@ footer {
   width: 200px;
   margin-left: 40%;
   margin-top: 5%;
-  position: relative; }
+  position: relative;
+  background-color: rgba(20, 20, 20, 0.59); }
 
 #galaxy {
   background-color: #000;

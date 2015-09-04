@@ -6,7 +6,7 @@ body {
 }
 
 .table {
-  margin-top: 100px !important;
+  margin-top: 48px;
   position: relative;
   background-color: rgba(20, 20, 20, 0.59);
   border: 1px solid black;
@@ -15,7 +15,10 @@ body {
 .form-control {
   text-align: center !important;
   position: relative !important;
-
+  width: 80% !important;
+  margin-left: 10%;
+  height: 20px !important;
+  border-radius: 0% !important;
 }
 
 header {
@@ -35,16 +38,26 @@ footer {
 }
 
 
+#add-galaxy {
+  border-radius: 0%;
+  margin-bottom: 5px;
+  height: 30px;
+  padding-bottom: 10px;
+}
+
 .form-group {
   // margin-left: 35%!important;
   position: relative !important;
 }
 
 #create-form {
+
   width: 200px;
   margin-left: 40%;
   margin-top: 5%;
   position: relative;
+  background-color: rgba(20, 20, 20, 0.59);
+
 
 }
 

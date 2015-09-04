@@ -4,12 +4,9 @@
 // Create new Three scene
 var scene = new THREE.Scene();
 // Create new Three perspective camera
-
 var camera = new THREE.PerspectiveCamera(140, window.innerWidth/window.innerHeight, 1, 50000);
 camera.position.x = 0;
 camera.position.z = 0;
-info = document.createElement( 'div' );
-document.body.appendChild( info );
 container = document.getElementById( "galaxy" );
 document.body.appendChild( container );
 
@@ -25,8 +22,8 @@ function newGalaxy() {
     var geometry = new THREE.Geometry();
     // Creates new material AKA the squares/stars
     var material = new THREE.PointCloudMaterial({
-      color: 0x001aa2,
-      size: 1,
+      color: 0x0dee90,
+      size: .2,
       blending: THREE.AdditiveBlending,
       transparent: true,
       sizeAttenuation: true
@@ -57,7 +54,7 @@ function newGalaxy() {
 
 // Create new instance of newGalaxy
 var newGalaxy = new newGalaxy();
-var galaxy = newGalaxy.create(50, 50, 200000);
+var galaxy = newGalaxy.create(50, 50, 400000);
 
 // Add galaxy to scene
 scene.add(galaxy);
